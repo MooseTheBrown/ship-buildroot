@@ -1,0 +1,12 @@
+[Unit]
+Description=ship control
+Wants=network.target
+After=network.target
+
+[Service]
+Type=exec
+ExecStart=/bin/ship-control
+ExecStop=/bin/killall ship-control
+
+[Install]
+WantedBy=multi-user.target
