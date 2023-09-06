@@ -1,0 +1,12 @@
+config BR2_PACKAGE_PSMOVEINPUT
+	bool "psmoveinput"
+	select BR2_PACKAGE_PSMOVEAPI
+	select BR2_PACKAGE_BOOST
+	select BR2_PACKAGE_BOOST_PROGRAM_OPTIONS
+	select BR2_PACKAGE_BOOST_BOOST_SYSTEM
+	select BR2_PACKAGE_BOOST_THREAD
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	help
+	  psmoveinput
+
+	  https://github.com/MooseTheBrown/psmoveinput

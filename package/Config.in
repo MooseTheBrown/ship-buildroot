@@ -2249,6 +2249,13 @@ menu "Miscellaneous"
 	source "package/z3/Config.in"
 endmenu
 
+menu "Ship software"
+	source "package/psmoveapi/Config.in"
+	source "package/psmoveinput/Config.in"
+	source "package/ship-control/Config.in"
+	source "package/ship-net-bridge/Config.in"
+endmenu
+
 menu "Networking applications"
 	source "package/aircrack-ng/Config.in"
 	source "package/alfred/Config.in"
