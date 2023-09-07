@@ -4,6 +4,6 @@ PSMOVEAPI_SITE_METHOD = local
 PSMOVEAPI_INSTALL_STAGING = YES
 #PSMOVEAPI_INSTALL_TARGET = NO
 #PSMOVEAPI_CONF_OPTS =
-PSMOVEAPI_DEPENDENCIES = host-pkgconf bluez_utils udev
+PSMOVEAPI_DEPENDENCIES = host-pkgconf bluez5_utils udev
 
 $(eval $(cmake-package))
