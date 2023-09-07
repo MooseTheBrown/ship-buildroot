@@ -4,4 +4,4 @@ Description=Disable rfkill block
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/bin/rfkill unblock all
+ExecStart=/sbin/rfkill unblock all
