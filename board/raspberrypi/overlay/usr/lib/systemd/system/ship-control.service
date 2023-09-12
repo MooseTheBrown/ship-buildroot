@@ -1,7 +1,7 @@
 [Unit]
 Description=ship control
-Wants=network.target
-After=network.target
+Wants=dev-ttyACM0.device
+After=dev-ttyACM0.device
 
 [Service]
 Type=exec

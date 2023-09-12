@@ -1,7 +1,7 @@
 [Unit]
 Description=ship network bridge
-Wants=ship-control.service
-After=ship-control.service
+Wants=ship-control.service wpa_supplicant.service
+After=ship-control.service wpa_supplicant.service
 
 [Service]
 Type=exec
