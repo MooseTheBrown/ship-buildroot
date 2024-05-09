@@ -1,0 +1,13 @@
+[Unit]
+Description=DHCP client service
+Requires=wpa_supplicant.service
+After=wpa_supplicant.service
+
+[Service]
+Type=exec
+ExecStart=/sbin/udhcpc -i wlan0
+Restart=on-failure
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target

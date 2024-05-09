@@ -1,0 +1,10 @@
+config BR2_PACKAGE_PSMOVEAPI
+	bool "psmoveapi"
+	select BR2_PACKAGE_PKGCONF
+	select BR2_PACKAGE_BLUEZ5_UTILS
+	depends on BR2_INIT_SYSTEMD
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	help
+	  psmoveapi library
+
+	  http://thp.io/2010/psmove/

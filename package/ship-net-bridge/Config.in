@@ -1,0 +1,8 @@
+config BR2_PACKAGE_SHIP_NET_BRIDGE
+    bool "ship-net-bridge"
+    depends on BR2_PACKAGE_HOST_GO_TARGET_ARCH_SUPPORTS
+    depends on BR2_PACKAGE_HOST_GO_TARGET_CGO_LINKING_SUPPORTS
+    help
+        ship-net-bridge
+
+        https://github.com/MooseTheBrown/ship-net-bridge
