@@ -1,7 +1,5 @@
 [Unit]
 Description=ship control
-Wants=dev-ttyACM0.device
-After=dev-ttyACM0.device
 
 [Service]
 Type=exec
