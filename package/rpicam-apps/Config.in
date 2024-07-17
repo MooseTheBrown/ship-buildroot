@@ -1,0 +1,13 @@
+config BR2_PACKAGE_RPICAM_APPS
+	bool "rpicam-apps"
+
+	depends on BR2_PACKAGE_LIBCAMERA
+	depends on BR2_PACKAGE_BOOST_PROGRAM_OPTIONS
+	depends on BR2_PACKAGE_LIBDRM
+	depends on BR2_PACKAGE_LIBEXIF
+	help
+	  libcamera provides a software stack to support
+	  complex devices that need heavy hardware image
+	  processing operations.
+
+	  http://www.libcamera.org/
