@@ -2333,6 +2333,7 @@ menu "Ship software"
 	source "package/psmoveinput/Config.in"
 	source "package/ship-control/Config.in"
 	source "package/ship-net-bridge/Config.in"
+	source "package/ship-position/Config.in"
 endmenu
 
 menu "Networking applications"

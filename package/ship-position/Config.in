@@ -1,0 +1,7 @@
+config BR2_PACKAGE_SHIP_POSITION
+	bool "ship-position"
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	help
+	  ship-position
+
+	  https://github.com/MooseTheBrown/ship-position
