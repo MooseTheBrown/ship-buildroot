@@ -33,3 +33,6 @@ dtoverlay=pwm-2chan
 
 # enable 64bits support
 arm_64bit=1
+
+# enable camera auto-detect
+camera_auto_detect=1
