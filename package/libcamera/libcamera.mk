@@ -5,7 +5,7 @@
 ################################################################################
 
 LIBCAMERA_SITE = https://github.com/raspberrypi/libcamera
-LIBCAMERA_VERSION = v0.3.0+rpt20240617
+LIBCAMERA_VERSION = v0.3.2+rpt20240927
 LIBCAMERA_SITE_METHOD = git
 LIBCAMERA_DEPENDENCIES = \
 	host-openssl \
