@@ -2334,6 +2334,8 @@ menu "Ship software"
 	source "package/ship-control/Config.in"
 	source "package/ship-net-bridge/Config.in"
 	source "package/ship-position/Config.in"
+	source "package/mediamtx-rpicamera/Config.in"
+	source "package/mediamtx/Config.in"
 endmenu
 
 menu "Networking applications"

@@ -1,0 +1,10 @@
+config BR2_PACKAGE_MEDIAMTX_RPICAMERA
+    bool "mediamtx-rpicamera"
+    depends on BR2_PACKAGE_LIBCAMERA
+    select BR2_PACKAGE_PYTHON_JINJA2
+    select BR2_PACKAGE_PYTHON_PYYAML
+    select BR2_PACKAGE_PYTHON_PLY
+    help
+        mediamtx-rpicamera
+
+        https://github.com/bluenviron/mediamtx-rpicamera
