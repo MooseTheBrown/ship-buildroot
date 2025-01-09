@@ -1,0 +1,7 @@
+config BR2_PACKAGE_MEDIAMTX
+    bool "mediamtx"
+    select BR2_PACKAGE_MEDIAMTX_RPICAMERA
+    help
+        mediamtx
+
+        https://github.com/bluenviron/mediamtx
