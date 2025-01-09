@@ -1,0 +1,12 @@
+[Unit]
+Description=ship network bridge
+Wants=ship-control.service wpa_supplicant.service
+After=ship-control.service wpa_supplicant.service
+
+[Service]
+Type=exec
+ExecStart=/bin/ship-net-bridge
+ExecStop=/bin/killall ship-net-bridge
+
+[Install]
+WantedBy=multi-user.target

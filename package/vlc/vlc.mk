@@ -86,6 +86,8 @@ VLC_CONF_OPTS += \
 	--disable-wasapi \
 	--disable-x262 \
 	--disable-zvbi \
+	--enable-mux_ogg \
+	--enable-ogg \
 	--enable-run-as-root
 
 # Uses __atomic_fetch_add_4

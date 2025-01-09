@@ -15,12 +15,12 @@ HOST_GO_TARGET_CACHE = $(HOST_DIR)/share/go-cache
 # cross-compiled binaries when GOBIN is set"
 HOST_GO_COMMON_ENV = \
 	GO111MODULE=on \
-	GOFLAGS=-mod=vendor \
+	GOFLAGS=-mod=readonly \
 	GOROOT="$(HOST_GO_ROOT)" \
 	GOPATH="$(HOST_GO_GOPATH)" \
 	GOCACHE="$(HOST_GO_TARGET_CACHE)" \
 	GOMODCACHE="$(HOST_GO_GOPATH)/pkg/mod" \
-	GOPROXY=off \
+	GOPROXY="https://proxy.golang.org" \
 	GOTOOLCHAIN=local \
 	PATH=$(BR_PATH) \
 	GOBIN= \

@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch wpa_supplicant.service
+Requires=rfkill_unblock.timer
+After=rfkill_unblock.timer
+
+[Timer]
+OnActiveSec=10
+RemainAfterElapse=yes
+
+[Install]
+WantedBy=multi-user.target

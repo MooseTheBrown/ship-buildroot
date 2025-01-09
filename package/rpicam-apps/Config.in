@@ -1,0 +1,14 @@
+config BR2_PACKAGE_RPICAM_APPS
+	bool "rpicam-apps"
+
+	depends on BR2_PACKAGE_LIBCAMERA
+	depends on BR2_PACKAGE_BOOST_PROGRAM_OPTIONS
+	depends on BR2_PACKAGE_LIBDRM
+	depends on BR2_PACKAGE_LIBEXIF
+	depends on BR2_PACKAGE_LIBJPEG
+	depends on BR2_PACKAGE_TIFF
+	depends on BR2_PACKAGE_LIBPNG
+	help
+		Small suite of libcamera-based applications to drive the cameras on a Raspberry Pi platform
+
+		https://github.com/raspberrypi/rpicam-apps

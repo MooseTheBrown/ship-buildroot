@@ -1,0 +1,10 @@
+[Unit]
+Description=ship control
+
+[Service]
+Type=exec
+ExecStart=/bin/ship-control
+ExecStop=/bin/killall ship-control
+
+[Install]
+WantedBy=multi-user.target
