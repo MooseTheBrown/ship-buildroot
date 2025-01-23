@@ -1,0 +1,12 @@
+[Unit]
+Description=RPI camera video streaming to mediamtx using RTSP
+After=mediamtx.service
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/rpicam-vid.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
