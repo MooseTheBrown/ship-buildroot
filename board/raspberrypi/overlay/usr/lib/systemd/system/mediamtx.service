@@ -4,6 +4,8 @@ Description=Mediamtx
 [Service]
 Type=exec
 ExecStart=/usr/bin/mediamtx
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target

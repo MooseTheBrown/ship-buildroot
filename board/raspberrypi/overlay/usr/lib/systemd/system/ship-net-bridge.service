@@ -7,6 +7,8 @@ After=ship-control.service wpa_supplicant.service
 Type=exec
 ExecStart=/bin/ship-net-bridge
 ExecStop=/bin/killall ship-net-bridge
+Restart=on-failure
+RestartSec=3
 
 [Install]
 WantedBy=multi-user.target

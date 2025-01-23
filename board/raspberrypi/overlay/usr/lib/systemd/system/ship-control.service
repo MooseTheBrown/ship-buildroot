@@ -5,6 +5,8 @@ Description=ship control
 Type=exec
 ExecStart=/bin/ship-control
 ExecStop=/bin/killall ship-control
+Restart=on-failure
+RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
