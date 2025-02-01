@@ -1,0 +1,12 @@
+[Unit]
+Description=ship position
+
+[Service]
+Type=exec
+ExecStart=/bin/ship-position
+ExecStop=/bin/killall ship-position
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
