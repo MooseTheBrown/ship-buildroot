@@ -1,0 +1,17 @@
+[Unit]
+Description=ship navigation service
+Wants=ship-control.service wpa_supplicant.service
+After=ship-control.service wpa_supplicant.service
+
+[Service]
+Type=exec
+ExecStart=/bin/ship-nav
+ExecStop=/bin/killall ship-nav
+Restart=on-failure
+RestartSec=3
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ship-nav
+
+[Install]
+WantedBy=multi-user.target

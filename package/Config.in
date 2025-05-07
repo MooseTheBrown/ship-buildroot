@@ -2409,6 +2409,7 @@ endmenu
 menu "Ship software"
 	source "package/ship-control/Config.in"
 	source "package/ship-net-bridge/Config.in"
+	source "package/ship-nav/Config.in"
 	source "package/ship-position/Config.in"
 	source "package/mediamtx/Config.in"
 endmenu
