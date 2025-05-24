@@ -1,6 +1,0 @@
-config BR2_PACKAGE_MEDIAMTX
-    bool "mediamtx"
-    help
-        mediamtx
-
-        https://github.com/bluenviron/mediamtx
