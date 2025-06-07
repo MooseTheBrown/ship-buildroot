@@ -1,4 +1,4 @@
-SHIP_NET_BRIDGE_VERSION = v2.1
+SHIP_NET_BRIDGE_VERSION = v2.2
 SHIP_NET_BRIDGE_SITE = https://github.com/MooseTheBrown/ship-net-bridge
 SHIP_NET_BRIDGE_SITE_METHOD = git
 SHIP_NET_BRIDGE_GOMOD=github.com/moosethebrown/ship-net-bridge
