@@ -3,6 +3,6 @@ Description=WPA supplicant
 
 [Service]
 Type=exec
-ExecStart=/sbin/wpa_supplicant -i wlan0 -c /etc/wpa_supplicant_moosephone.conf
+ExecStart=/sbin/wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.service
 Restart=on-failure
 RestartSec=3
